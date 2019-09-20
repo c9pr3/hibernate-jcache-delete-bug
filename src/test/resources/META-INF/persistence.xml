@@ -9,8 +9,8 @@
         <description>Hibernate test case template Persistence Unit</description>
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <exclude-unlisted-classes>false</exclude-unlisted-classes>
-
+        <class>org.hibernate.bugs.ReadWriteEntity</class>
+        <class>org.hibernate.bugs.TransactionalEntity</class>
         <properties>
             <property name="hibernate.archive.autodetection" value="class, hbm"/>
 
